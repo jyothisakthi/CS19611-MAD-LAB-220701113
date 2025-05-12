@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Top App Bar -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#6200EE"
+        android:gravity="center"
+        android:text="Telephony Services"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Form Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/operatorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Network Operator Name"
+                android:focusable="false"
+                android:inputType="none"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/phoneType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Type"
+                android:focusable="false"
+                android:inputType="none"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/networkCountryISO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Network Country ISO"
+                android:focusable="false"
+                android:inputType="none"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/simCountryISO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SIM Country ISO"
+                android:focusable="false"
+                android:inputType="none"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/softwareVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Device Software Version"
+                android:focusable="false"
+                android:inputType="none"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/getInfoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#6200EE"
+                android:text="Get Telephony Services"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
